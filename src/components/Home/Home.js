@@ -17,18 +17,26 @@ const Home = () => {
   }, []);
   console.log(leagues);
   return (
-    <main className="container">
-      <div className="row">
-        {
-          leagues.map(league => {
-            return <League
-              league={league}
-              key={league.idLeague}
-            ></League>
-          })
-        }
+    <>
+      <div className="cover text-center">
+        <div className="cover-text text-primary">
+          <div className="display-1">Dream League</div>
+          <div className="display-4">2021</div>
+        </div>
       </div>
-    </main>
+      <div className="container">
+        <div className="row">
+          {
+            leagues.map(league => {
+              return <League
+                league={league}
+                key={league.idLeague}
+              ></League>
+            })
+          }
+        </div>
+      </div>
+    </>
   );
 };
 
