@@ -3,6 +3,7 @@ import { faFlag, faFutbol, faMapMarkedAlt, faMars } from '@fortawesome/free-soli
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import './LeagueDetail.css';
 
 const LeagueDetail = () => {
@@ -12,9 +13,15 @@ const LeagueDetail = () => {
     strCountry, strSport, strGender,strFanart2,
     strDescriptionEN, strDescriptionES, strDescriptionDE, strDescriptionFR,
     strTwitter, strFacebook, strYoutube} = league;
-  const twitter = `https://${strTwitter}`;
-  const facebook = `https://${strFacebook}`;
-  const youtube = `https://${strYoutube}`;
+  
+  // Social Media link conditions and generate the link
+  const twitterCondition = !strTwitter ? "www.twitter.com" : strTwitter;
+  const twitter = `https://${twitterCondition}`;
+  const facebookCondition = !strFacebook ? "www.facebook.com" : strFacebook;
+  const facebook = `https://${facebookCondition}`;
+  const youtubeCondition = !strYoutube ? "www.youtube.com" : strYoutube;
+  const youtube = `https://${youtubeCondition}`;
+
   useEffect(() => {
     const singleLinkURL = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${leagueId}`;
     fetch(singleLinkURL)
@@ -29,11 +36,13 @@ const LeagueDetail = () => {
   const french = <p>{strDescriptionFR}</p>;
   const german = <p>{strDescriptionDE}</p>;
   const spanishOrFrenchOrGerman = !strDescriptionES ? french : (!strDescriptionFR ? german : spanish);
-  
+
   return (
     <>
       <div className="cover">
-        <img src={strBadge} className="image-thumbnail" alt="..."></img>
+        <Link to="/">
+          <img src={strBadge} className="image-thumbnail" alt={strLeague}></img>
+        </Link>
       </div>
       <div className="container py-3">
         <div className="row bg-primary round-20px text-white p-3 d-flex align-items-center">
@@ -78,17 +87,17 @@ const LeagueDetail = () => {
         </div>
         <footer className="text-center">
           <div className="footer-icon">
-            <a href={twitter}>
+            <a href={twitter} target="_blank" rel="noreferrer">
               <span className="icon twitter">
                 <FontAwesomeIcon icon={faTwitter} />
               </span>
             </a>
-            <a href={facebook}>
+            <a href={facebook} target="_blank" rel="noreferrer">
               <span className="icon facebook">
                 <FontAwesomeIcon icon={faFacebookF} />
               </span>
             </a>
-            <a href={youtube}>
+            <a href={youtube} target="_blank" rel="noreferrer">
               <span className="icon youtube">
                 <FontAwesomeIcon icon={faYoutube} />
               </span>

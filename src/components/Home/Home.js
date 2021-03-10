@@ -20,8 +20,7 @@ const Home = () => {
     <>
       <div className="cover text-center">
         <div className="cover-text text-primary">
-          <div className="display-1">Dream League</div>
-          <div className="display-4">2021</div>
+          <div className="display-1">Cat League Info</div>
         </div>
       </div>
       <div className="container">
