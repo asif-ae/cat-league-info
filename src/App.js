@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from "./components/Home/Home";
 
 function App() {
   const [league, setLeague] = useState([]);
@@ -28,8 +29,13 @@ function App() {
   }, []);
   console.log(leagues);
   return (
-    <>
-    </>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home></Home>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
