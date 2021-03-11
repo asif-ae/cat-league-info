@@ -5,6 +5,10 @@ Please visite my website [Cat League Info](https://604a03fb8fb7047ea0fa95e3--cra
 ### Raw Link
 https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
 
+## Assignment 08
+GitHub Repo Link: https://github.com/Porgramming-Hero-web-course/react-router-asif-ae
+Live Site Link: https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
+
 ## Core Features
 
 1. Added more than a hundred leagues on the home page using TheSportsDB API.
