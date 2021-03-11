@@ -56,46 +56,7 @@ img {
   background-color: white;
 }
 
-.cover {
-  position: relative;
-  width: auto;
-  height: 22rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.cover::before {
-  content: '';
-  position: absolute;
-  background-image: url('./background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.4;
-  z-index: -3;
-}
-
-.cover:hover .image-thumbnail {
-  background-color: royalblue;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.cover-image {
-  position: absolute;
-  height: 22rem;
-  top: 0;
-  right: 0px;
-  /* bottom: 0px; */
-  left: 0px;
-  opacity: 1;
-  z-index: -1;
-}
 
 .cover-text {
   position: relative;
