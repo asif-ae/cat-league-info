@@ -22,6 +22,12 @@
   z-index: -3;
 }
 
+.image-thumbnail {
+  position: relative;
+  width: 100px;
+  opacity: 1;
+}
+
 .cover:hover .image-thumbnail {
   background-color: royalblue;
   padding: 10px;
