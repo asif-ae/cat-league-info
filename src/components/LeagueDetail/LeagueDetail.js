@@ -5,14 +5,28 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import './LeagueDetail.css';
+import maleImage from './images/male.png';
+import femaleImage from './images/female.png';
 
 const LeagueDetail = () => {
   const {leagueId} = useParams();
   const [league, setLeague] = useState({});
   const {strBadge, strBanner, strLeague, dateFirstEvent,
-    strCountry, strSport, strGender,strFanart2,
+    strCountry, strSport, strGender, strFanart2,
     strDescriptionEN, strDescriptionES, strDescriptionDE, strDescriptionFR,
     strTwitter, strFacebook, strYoutube} = league;
+    
+  let fanartImage;
+  
+  if (!strFanart2) {
+    if (strGender === "Male") {
+      fanartImage = maleImage;
+    } else if (strGender === "Mixed" || strGender === "Female") {
+      fanartImage = femaleImage;
+    }
+  } else {
+    fanartImage = strFanart2;
+  }
   
   // Social Media link conditions and generate the link
   const twitterCondition = !strTwitter ? "www.twitter.com" : strTwitter;
@@ -78,7 +92,7 @@ const LeagueDetail = () => {
           </div>
           <div className="col-md-6">
             <div className="thumb p-3">
-              <img src={strFanart2} alt={strLeague} className="round-20px" />
+              <img src={fanartImage} alt={strLeague} className="round-20px" />
             </div>
           </div>
         </div>
