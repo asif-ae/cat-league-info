@@ -6,8 +6,8 @@ Please visite my website [Cat League Info](https://604a03fb8fb7047ea0fa95e3--cra
 https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
 
 ## Assignment 08
-GitHub Repo Link: https://github.com/Porgramming-Hero-web-course/react-router-asif-ae
-Live Site Link: https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
+1. GitHub Repo Link: https://github.com/Porgramming-Hero-web-course/react-router-asif-ae
+2. Live Site Link: https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
 
 ## Core Features
 
