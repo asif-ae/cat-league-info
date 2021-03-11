@@ -11,50 +11,7 @@ img {
   border-radius: 20px;
 }
 
-.icon {
-  font-size: 2rem;
-  margin: 20px;
-  border-radius: 50%;
-}
 
-.twitter {
-  padding: 5px 10px;
-  color: white;
-  border: 2px solid white;
-  background-color: #00ACEE;
-}
-
-.twitter:hover {
-  color: #00ACEE;
-  border: 2px solid #00ACEE;
-  background-color: white;
-}
-
-.facebook {
-  padding: 5px 16px;
-  color: white;
-  border: 2px solid white;
-  background-color: #3B5998;
-}
-
-.facebook:hover {
-  color: #3B5998;
-  border: 2px solid #3B5998;
-  background-color: white;
-}
-
-.youtube {
-  padding: 5px 9px;
-  color: white;
-  border: 2px solid white;
-  background-color: #F00;
-}
-
-.youtube:hover {
-  color: red;
-  border: 2px solid red;
-  background-color: white;
-}
 
 
 
