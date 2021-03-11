@@ -15,7 +15,7 @@ const Footer = (props) => {
   const youtube = `https://${youtubeCondition}`;
 
   return (
-    <footer className="text-center">
+    <footer className="text-center pb-5">
       <div className="footer-icon">
         <a href={twitter} target="_blank" rel="noreferrer">
           <span className="icon twitter">
