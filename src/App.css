@@ -53,7 +53,7 @@ img {
 .cover {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +71,23 @@ img {
   bottom: 0px;
   left: 0px;
   opacity: 0.4;
+  z-index: -3;
+}
+
+.cover:hover .image-thumbnail {
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.cover-image {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+  z-index: -1;
 }
 
 .cover-text {
@@ -83,4 +100,34 @@ img {
   position: relative;
   width: 100px;
   opacity: 100%;
+}
+
+.card-image {
+  width: 100px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.card-image:hover {
+  background-color: royalblue;
+  border-radius: 0;
+}
+
+.custom-card {
+  border-radius: 20px;
+}
+
+.custom-card:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+.card-btn {
+  background-color: royalblue;
+}
+
+.card-btn:hover {
+  background-color: white !important;
+  color: royalblue !important;
 }

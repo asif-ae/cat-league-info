@@ -18,13 +18,15 @@ const League = (props) => {
   console.log(league.strBadge);
 
   return (
-    <div className="col-md-6 col-lg-4">
-      <div className="p-3 text-center">
-        <img src={league.strBadge} alt={strLeague}/>
+    <div className="col-md-6 col-lg-4 p-3">
+      <div className="p-3 text-center shadow custom-card">
+        <Link to={`/league/${idLeague}`}>
+          <img className="card-image" src={league.strBadge} alt={strLeague}/>
+        </Link>
         <h5>{strLeague}</h5>
         <p><small>Sports type: {strSport}</small></p>
         <Link to={`/league/${idLeague}`}>
-          <Button variant="primary">
+          <Button className="card-btn shadow">
             <span className="p-3">Explore </span>
             <FontAwesomeIcon icon={faArrowRight} />
           </Button>

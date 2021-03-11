@@ -9,7 +9,7 @@ import './LeagueDetail.css';
 const LeagueDetail = () => {
   const {leagueId} = useParams();
   const [league, setLeague] = useState({});
-  const {strBadge, strLeague, dateFirstEvent,
+  const {strBadge, strBanner, strLeague, dateFirstEvent,
     strCountry, strSport, strGender,strFanart2,
     strDescriptionEN, strDescriptionES, strDescriptionDE, strDescriptionFR,
     strTwitter, strFacebook, strYoutube} = league;
@@ -43,6 +43,7 @@ const LeagueDetail = () => {
         <Link to="/">
           <img src={strBadge} className="image-thumbnail" alt={strLeague}></img>
         </Link>
+        <img src={strBanner} alt={strLeague} className="cover-image"/>
       </div>
       <div className="container py-3">
         <div className="row bg-primary round-20px text-white p-3 d-flex align-items-center">

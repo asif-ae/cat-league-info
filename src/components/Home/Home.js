@@ -10,7 +10,7 @@ const Home = () => {
     .then(res => res.json())
     .then(data => {
       const allLeagues = data.leagues;
-      const twentyLeagues = allLeagues.slice(0, 15);
+      const twentyLeagues = allLeagues.slice(0, 150);
       setLeagues(twentyLeagues);
     })
     .catch(err => console.log(err));
