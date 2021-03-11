@@ -5,11 +5,16 @@ Please visite my website [Cat League Info](https://604a03fb8fb7047ea0fa95e3--cra
 ### Raw Link
 https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
 
-## Available Scripts
+## Core Features
 
-In the project directory, you can run:
+1. Added more than a hundred leagues on the home page using TheSportsDB API.
+2. React routers have been used to navigate different paths.
+3. React useParams() have been used to navigate dynamic paths. (LeagueDetail.js > line no: 11, 12)
+4. Accessed the data using the route parameters on the detail page. (App.js > line no: 20-23)
+5. Used social media icons using Font Awesome. (Footer.js > line no: 3, 4, 19-36)
+6. Used conditional formatting on the detail page. (InfoCard.js > line no: 11-21, Description.js > Line no: 7-12, Footer.js > Line no: 9-15)
 
-### `npm start`
+## Bonus Features
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

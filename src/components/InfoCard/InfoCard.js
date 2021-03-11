@@ -8,6 +8,7 @@ import femaleImage from './images/female.png';
 const InfoCard = (props) => {
   const { strLeague, dateFirstEvent, strCountry, strSport, strGender, strFanart2 } = props.league;
 
+  // Conditional Formatting using IF ELSE statement
   let fanartImage;
   if (!strFanart2) {
     if (strGender === "Male") {

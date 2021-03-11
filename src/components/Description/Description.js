@@ -4,7 +4,8 @@ import './Description.css';
 const Description = (props) => {
   const { strDescriptionEN, strDescriptionES, strDescriptionDE, strDescriptionFR } = props.league;
 
-  // Conditional Formatting or Rendering
+  /*  Conditional Formatting or Rendering
+      using Conditional (ternary) operator  */
   const spanish = <p>{strDescriptionES}</p>;
   const french = <p>{strDescriptionFR}</p>;
   const german = <p>{strDescriptionDE}</p>;

@@ -17,6 +17,7 @@ function App() {
         <Route exact path="/">
           <Home></Home>
         </Route>
+        {/* Creating dynamic url using Route parameter */}
         <Route path="/league/:leagueId">
           <LeagueDetail></LeagueDetail>
         </Route>

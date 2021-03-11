@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = (props) => {
   const { strTwitter, strFacebook, strYoutube } = props.league;
 
-  // Social Media link conditions and generate the link
+  // Dynamicly set url using Conditional (ternary) Formatting
   const twitterCondition = !strTwitter ? "www.twitter.com" : strTwitter;
   const twitter = `https://${twitterCondition}`;
   const facebookCondition = !strFacebook ? "www.facebook.com" : strFacebook;
@@ -16,6 +16,7 @@ const Footer = (props) => {
 
   return (
     <footer className="text-center pb-5">
+      {/* Font Awesome Social Media Icons */}
       <div className="footer-icon">
         <a href={twitter} target="_blank" rel="noreferrer">
           <span className="icon twitter">

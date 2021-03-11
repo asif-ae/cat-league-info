@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 
 const LeagueDetail = () => {
 
+  // Used useParams() here
   const {leagueId} = useParams();
 
   const [league, setLeague] = useState({});
@@ -23,6 +24,10 @@ const LeagueDetail = () => {
   return (
     <>
     
+      {/*               Important Notice                 */}
+      {/* Conditional Formattings are on the components! */}
+      {/*         A pleasure to your patience!           */}
+
       {/* Top Banner */}
       <TopBanner league={league}></TopBanner>
 
