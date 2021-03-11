@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import './League.css';
 
 const League = (props) => {
   const {strLeague, strSport, idLeague} = props.league;

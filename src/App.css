@@ -15,11 +15,7 @@ img {
 
 
 
-.cover-text {
-  position: relative;
-  width: auto;
-  opacity: 100%;
-}
+
 
 .image-thumbnail {
   position: relative;
@@ -27,32 +23,7 @@ img {
   opacity: 100%;
 }
 
-.card-image {
-  width: 100px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 50%;
-}
 
-.card-image:hover {
-  background-color: royalblue;
-  border-radius: 0;
-}
 
-.custom-card {
-  border-radius: 20px;
-}
 
-.custom-card:hover {
-  background-color: royalblue;
-  color: white;
-}
 
-.card-btn {
-  background-color: royalblue;
-}
-
-.card-btn:hover {
-  background-color: white !important;
-  color: royalblue !important;
-}
