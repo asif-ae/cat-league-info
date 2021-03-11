@@ -16,7 +16,6 @@ const League = (props) => {
     .then(data => setLeague(data.leagues[0]))
     .catch(err => console.log(err));
   }, [idLeague]);
-  console.log(league.strBadge);
 
   return (
     <div className="col-md-6 col-lg-4 p-3">
