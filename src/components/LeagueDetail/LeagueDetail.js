@@ -3,21 +3,22 @@ import { faFlag, faFutbol, faMapMarkedAlt, faMars } from '@fortawesome/free-soli
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import './LeagueDetail.css';
 import maleImage from './images/male.png';
 import femaleImage from './images/female.png';
+import TopBanner from '../TopBanner/TopBanner';
 
 const LeagueDetail = () => {
+
   const {leagueId} = useParams();
+
   const [league, setLeague] = useState({});
-  const {strBadge, strBanner, strLeague, dateFirstEvent,
+  const { strLeague, dateFirstEvent,
     strCountry, strSport, strGender, strFanart2,
     strDescriptionEN, strDescriptionES, strDescriptionDE, strDescriptionFR,
-    strTwitter, strFacebook, strYoutube} = league;
+    strTwitter, strFacebook, strYoutube } = league;
     
   let fanartImage;
-  
   if (!strFanart2) {
     if (strGender === "Male") {
       fanartImage = maleImage;
@@ -43,7 +44,6 @@ const LeagueDetail = () => {
     .then(data => setLeague(data.leagues[0]))
     .catch(err => console.log(err));
   }, [leagueId]);
-  console.log(league);
 
   // Conditional Formatting or Rendering
   const spanish = <p>{strDescriptionES}</p>;
@@ -53,12 +53,11 @@ const LeagueDetail = () => {
 
   return (
     <>
-      <div className="cover container-fluid">
-        <Link to="/">
-          <img src={strBadge} className="image-thumbnail" alt={strLeague}></img>
-        </Link>
-        <img src={strBanner} alt={strLeague} className="cover-image"/>
-      </div>
+    
+      {/* Top Banner */}
+      <TopBanner league={league}></TopBanner>
+
+      {/* Info-Card */}
       <div className="container py-3">
         <div className="row bg-primary round-20px text-white p-3 d-flex align-items-center">
           <div className="col-md-6 p-3">
@@ -96,10 +95,14 @@ const LeagueDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Description */}
         <div className="p-3 description">
           <p className="py-5">{strDescriptionEN}</p>
           {spanishOrFrenchOrGerman}
         </div>
+
+        {/* Footer Social Icons */}
         <footer className="text-center">
           <div className="footer-icon">
             <a href={twitter} target="_blank" rel="noreferrer">
@@ -119,6 +122,7 @@ const LeagueDetail = () => {
             </a>
           </div>
         </footer>
+
       </div>
     </>
   );

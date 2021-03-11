@@ -3,6 +3,7 @@ import League from "../League/League";
 import './Home.css';
 
 const Home = () => {
+
   const [leagues, setLeagues] = useState([]);
   useEffect(() => {
     const allLeaguesURL = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
@@ -15,8 +16,9 @@ const Home = () => {
     })
     .catch(err => console.log(err));
   }, []);
-  console.log(leagues);
+
   return (
+
     <>
       <div className="cover text-center">
         <div className="cover-text text-primary">
@@ -36,6 +38,7 @@ const Home = () => {
         </div>
       </div>
     </>
+    
   );
 };
 
