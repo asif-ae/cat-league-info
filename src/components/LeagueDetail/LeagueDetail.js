@@ -53,7 +53,7 @@ const LeagueDetail = () => {
 
   return (
     <>
-      <div className="cover">
+      <div className="cover container-fluid">
         <Link to="/">
           <img src={strBadge} className="image-thumbnail" alt={strLeague}></img>
         </Link>
