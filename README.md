@@ -1,13 +1,13 @@
-# [Cat League Info](https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app)
+# [Cat League Info](https://cranky-nightingale-a0b3f9.netlify.app)
 
-Please visite my website [Cat League Info](https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app).
+Please visite my website [Cat League Info](https://cranky-nightingale-a0b3f9.netlify.app).
 
 ### Raw Link
-https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
+https://cranky-nightingale-a0b3f9.netlify.app
 
 ## Assignment 08
 1. GitHub Repo Link: https://github.com/Porgramming-Hero-web-course/react-router-asif-ae
-2. Live Site Link: https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
+2. Live Site Link: https://cranky-nightingale-a0b3f9.netlify.app
 
 ## Core Features
 
@@ -20,7 +20,7 @@ https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app
 
 ## Bonus Features
 1. Website is fully responsive for mobile, tab and desktop versions.
-2. Changed website name to [Cat League Info](https://604a03fb8fb7047ea0fa95e3--cranky-nightingale-a0b3f9.netlify.app).
+2. Changed website name to [Cat League Info](https://cranky-nightingale-a0b3f9.netlify.app).
 3. Added some hover effects on home page cards. (I make it simple to use and good-looking for users)
 4. I made the code as simple as I can.
 5. I also have tried to keep the names of variables, props, and components meaningful.
